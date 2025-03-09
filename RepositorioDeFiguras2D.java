@@ -1,5 +1,6 @@
 package FigurasGeometricas;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class RepositorioDeFiguras2D {
@@ -37,7 +38,7 @@ public class RepositorioDeFiguras2D {
     public String obterTipo(int index){
         return figuras.get(index).gettipo();
     }
-
-
-
+    public void ordenarPorArea() {
+        Collections.sort(figuras);
+    }
 }
